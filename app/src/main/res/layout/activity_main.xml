@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment"
+    tools:ignore="MissingDefaultResource"
+    android:background="#E5E5E5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:background="#33907C"></RelativeLayout>
+
+    <SearchView
+        android:id="@+id/search1"
+        android:layout_width="395dp"
+        android:layout_height="150px"
+        android:layout_marginTop="400px"
+        android:background="#FFBD59"
+        android:backgroundTint="#FFBD59"
+        android:text="Search oiseau">
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="800px"
+        android:layout_marginTop="600px"
+        android:text="الكل"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="11dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="20px">
+
+        <Button
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="@drawable/power"
+            android:backgroundTint="#FFBD59"
+            android:layout_margin="300px"
+            tools:layout_editor_absoluteX="450dp" />
+
+        <Button
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:background="@drawable/profile"
+            android:backgroundTint="#FFFFFF"
+            tools:layout_editor_absoluteX="15dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginTop="1500px"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/order" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/profile1" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/profile" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/group" />
+
+    </LinearLayout>
+
+
+</RelativeLayout >
